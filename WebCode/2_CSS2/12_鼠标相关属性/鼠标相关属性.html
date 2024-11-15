@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标相关属性</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            /* 自定义鼠标样式 */
+            cursor: url(../images/arrow.png),pointer;
+        }
+        button {
+            /* 小手像素 */
+            cursor: pointer;
+        }
+        input {
+            /* 其他样式 */
+            cursor: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        把鼠标放进来看一看
+        <input type="text">
+        <a href="#">百度</a>
+        <button>点我</button>
+    </div>
+</body>
+</html>

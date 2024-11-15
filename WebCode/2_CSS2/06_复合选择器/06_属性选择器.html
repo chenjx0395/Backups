@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.选择所有此属性的元素 */
+        [title] {
+            color: red;
+        }
+        /* 2.选择此属性具体值的元素 */
+        [title="code"] {
+            color: aqua;
+        }
+        /* 3.选择此属性值以c开头的元素 */
+        [title^="c"] {
+            color: blue;
+        }
+        /* 4.选择此属性值以.结尾的元素 */
+        [title$="."] {
+            color: blueviolet;
+        }
+        /* 5.选择此属性值中含有i的元素 */
+        [title*="c"] {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <P title="code">我爱编程</P>
+    <P title="code">我爱编程</P>
+    <P title="livecode">我爱编程</P>
+    <P title="livecode">我爱编程</P>
+    <P title="livecode.">我爱编程</P>
+    <P title="livecode.">我爱编程</P>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://search.jd.com/search">
+      <fieldset>
+        <legend>重要数据</legend>
+        <!-- label 绑定方式一：for属性绑定控件id值 -->
+        <label for="zhanHu">账户：</label>
+        <input id="zhanHu" name="account" type="text" value="zhansan" />
+        <br />
+        <!-- label 绑定方式二：包裹需绑定的文本和控件 -->
+        <label>
+          密码：
+          <input type="password" name="password" value="123" />
+        </label>
+        <br />
+        性别：
+        <label> <input type="radio" name="gender" value="male" />男 </label>
+        <label>
+          <input type="radio" name="gender" value="female" checked />女
+        </label>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>补充数据</legend>
+        爱好：
+        <label><input type="checkbox" name="hobby" value="somke" />抽烟</label>
+        <label
+          ><input
+            type="checkbox"
+            name="hobby"
+            value="drink"
+            checked
+          />喝酒</label
+        >
+        <label><input type="checkbox" name="hobby" value="perm" />烫头</label>
+        <br />
+        <label>
+          其他：
+          <textarea name="other" cols="22" rows="5"></textarea>
+        </label>
+        <br />
+        籍贯：
+        <select name="origo">
+          <option value="HN">湖南</option>
+          <option value="GD">广东</option>
+          <option value="SH">上海</option>
+          <option value="BJ" selected>北京</option>
+        </select>
+      </fieldset>
+
+      <!-- 隐藏域 -->
+      <input type="hidden" name="hidden" value="666" />
+      <br />
+      <!-- 按钮的写法一 -->
+      <button type="submit">确认</button>
+      <!-- 按钮的写法二 -->
+      <!-- <input type="submit" value="确认"> -->
+      <button type="reset">重置</button>
+      <!-- 普通按钮 -->
+      <button type="button">检测用户名是否注册</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/* #region 基础设置 */
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* #endregion 基础设置end */
+
+/* #region 顶部导航栏 */
+.topbar {
+    height: 30px;
+    background-color: #ECECEC;
+}
+
+.welcome {
+    height: 30px;
+    font-size: 0px;
+    line-height: 30px;
+    color: #666;
+}
+.welcome span,.welcome a{
+    font-size: 12px;
+}
+.welcome span:first-child {
+    margin-right: 28px;
+}
+.welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid #666;
+}
+.welcome .register {
+    margin-left: 10px;
+}
+.topbar-nav .list{
+    height: 30px;
+    line-height: 30px;
+}
+.topbar-nav .list li{
+    float: left;
+}
+.topbar-nav .list li a{
+    color: #666;
+    font-size: 12px;
+    padding: 0 15px;
+    border-right: 1px solid #666;
+}
+.topbar-nav .list li:first-child a{
+    padding-left: 0px;
+}
+.topbar-nav .list li:last-child a{
+    padding-right: 0px;
+    border: 0;
+}
+
+
+
+/* #endregion 顶部导航栏end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

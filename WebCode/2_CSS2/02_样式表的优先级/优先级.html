@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 内部样式优先级和外联样式一致，同时存在看谁代码位置靠后 -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        h1 {
+            color: green;
+            /* 同级样式同名样式后的覆盖先的 */
+            /* color: gold */
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内样式优先级最高 -->
+    <h1 style="color: red;">嘻嘻哈哈哒哒</h1>
+</body>
+</html>

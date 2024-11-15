@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>06_浮动布局小练习</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .float_left {
+        float: left;
+      }
+      .float_right {
+        float: right;
+      }
+      .clean_float::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    
+      .logo {
+        width: 200px;
+      }
+      .banner1 {
+        width: 540px;
+        margin: 0 10px;
+      }
+      .banner2 {
+        width: 200px;
+      }
+      .logo,.banner1,.banner2 {
+            height: 80px;
+            line-height: 80px;
+            background-color: #ccc;
+        }
+
+      
+      .menu {
+        height: 30px;
+        line-height: 30px;
+        margin: 10px auto 0px;
+        background-color: #dddddd;
+      }
+      .main_left_top_item {
+        width: 368px;
+        height: 198px;
+        border: 1px solid black;
+        margin-right: 10px;
+        line-height: 198px;
+      }
+      .main_left_bottom_item {
+        width: 178px;
+        height: 198px;
+        margin: 10px 10px 10px 0px;
+        border: 1px solid black;
+        line-height: 198px;
+      }
+      .main_right_item {
+        width: 198px;
+        height: 128px;
+        border: 1px solid black;
+        margin-top: 10px;
+        line-height: 128px;
+      }
+      .main_left{
+        width: 760px;
+        margin-top: 10px;
+      }
+      .main_body{
+        width: 960px;
+        margin: 0 auto;
+      }
+      .footer{
+        height: 60px;
+        margin: 10px auto 0;
+        background-color: #dddddd;
+        line-height: 60px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <!-- 头部 -->
+    <div class=" clean_float">
+      <div class="logo  float_left">logo</div>
+      <div class="banner1 float_left ">banner1</div>
+      <div class="banner2 float_left ">banner2</div>
+    </div>
+    <!-- 菜单 -->
+    <div class="menu">菜单</div>
+    <!-- 主体内容区 -->
+    <div class="main_body clean_float">
+      <!-- 左侧栏目区 -->
+      <div class="main_left float_left clean_float">
+        <!-- 左上栏目区 -->
+        <div class="item1 float_left main_left_top_item">栏目一</div>
+        <div class="item2 float_left main_left_top_item">栏目二</div>
+        <!-- 左下栏目区 -->
+        <div class="item3 float_left main_left_bottom_item">栏目三</div>
+        <div class="item4 float_left main_left_bottom_item">栏目四</div>
+        <div class="item5 float_left main_left_bottom_item">栏目五</div>
+        <div class="item5 float_left main_left_bottom_item">栏目六</div>
+      </div>
+      <!-- 右侧栏目区 -->
+      <div class="main_right float_left">
+        <div class="item8 main_right_item">栏目七</div>
+        <div class="item9 main_right_item">栏目八</div>
+        <div class="item9 main_right_item">栏目九</div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+     <div class="footer">
+        页脚
+     </div>
+     </div>
+  </body>
+</html>

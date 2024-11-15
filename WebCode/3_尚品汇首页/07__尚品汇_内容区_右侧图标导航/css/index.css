@@ -1,0 +1,270 @@
+/* #region 基础设置 */
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+/* #endregion 基础设置end */
+
+/* #region 顶部导航栏 */
+.topbar {
+  height: 30px;
+  background-color: #ececec;
+}
+
+.welcome {
+  height: 30px;
+  font-size: 0px;
+  line-height: 30px;
+  color: #666;
+}
+.welcome span,
+.welcome a {
+  font-size: 12px;
+}
+.welcome span:first-child {
+  margin-right: 28px;
+}
+.welcome .login {
+  padding-right: 10px;
+  border-right: 1px solid #666;
+}
+.welcome .register {
+  margin-left: 10px;
+}
+.topbar-nav .list {
+  height: 30px;
+  line-height: 30px;
+}
+.topbar-nav .list li {
+  float: left;
+}
+.topbar-nav .list li a {
+  color: #666;
+  font-size: 12px;
+  padding: 0 15px;
+  border-right: 1px solid #666;
+}
+.topbar-nav .list li:first-child a {
+  padding-left: 0px;
+}
+.topbar-nav .list li:last-child a {
+  padding-right: 0px;
+  border: 0;
+}
+
+/* #endregion 顶部导航栏end */
+
+/* #region 头部 */
+.header {
+  height: 120px;
+}
+.header .sercher form {
+  margin-top: 42px;
+  font-size: 0;
+}
+.header .sercher form input {
+  width: 508px;
+  height: 34px;
+  border: 1px solid red;
+}
+.header .sercher form button {
+  width: 80px;
+  height: 36px;
+  background-color: #dd302d;
+  vertical-align: top;
+  background-image: url(../../images/serch_icon.png);
+  background-repeat: no-repeat;
+  background-position: 28px 6px;
+}
+
+/* #endregion 头部end */
+
+/* #region 主导航 */
+.main-navbar {
+  height: 48px;
+  border-bottom: 1px solid #dd302d;
+}
+.main-navbar .alltype {
+  width: 190px;
+  background-color: #dd302d;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+.main-nav-list {
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+.main-nav-list li {
+  float: left;
+  margin: 0 10px;
+}
+
+/* #endregion 主导航end */
+
+/* #region 内容区 */
+.main-content {
+  margin-top: 10px;
+}
+.main-content .slide-nav {
+  height: 458px;
+  width: 190px;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  position: relative;
+}
+.main-content .slide-nav li {
+  padding-left: 16px;
+}
+.main-content .slide-nav li:hover .second_menu {
+  display: block;
+}
+.main-content .slide-nav li:hover {
+  background-color: #dd302d;
+}
+.main-content .slide-nav li:hover > a {
+  color: #fff;
+}
+.main-content .second_menu {
+  width: 700px;
+  height: 448px;
+  background-color: white;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  display: none;
+}
+.main-content .second_menu dt {
+  width: 70px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 0px 10px 0px 20px;
+}
+.main-content .second_menu dd {
+  float: left;
+  font-size: 14px;
+  color: #666;
+  padding: 0 10px 0;
+  border-left: 1px solid #666;
+  line-height: 20px;
+  margin: 8px 0 8px;
+}
+/* 轮播图 */
+.main-content .main-banner {
+  height: 458px;
+  width: 690px;
+  margin: 0 10px;
+}
+/* 右侧咨询导航区 */
+.main-content .consult-nav {
+  height: 458px;
+  width: 290px;
+}
+.consult-nav .message {
+  width: 260px;
+  height: 156px;
+  border: 1px solid #d9d9d9;
+  padding: 0 14px 0;
+}
+.consult-nav .message_title {
+  border-bottom: 1px solid #d9d9d9;
+  line-height: 34px;
+  margin-top: 5px;
+}
+.consult-nav .message span {
+  font-size: 14px;
+}
+.consult-nav .message a {
+  font-size: 12px;
+}
+.consult-nav .message_list li {
+  height: 26px;
+  line-height: 26px;
+}
+.consult-nav .message_list a {
+  font-size: 12px;
+}
+
+.consult-nav .other_nav {
+  width: 290px;
+  height: 290px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.other_nav_item li{
+  width: 48px;
+  height: 70px;
+  float: left;
+  margin: 0 11px;
+  cursor: pointer;
+}
+.other_nav_item:first-child li {
+  margin-top: 16px;
+  
+}
+.other_nav_item:nth-child(2) {
+  margin: 16px 0px;
+}
+.other_nav_item li:first-child {
+  margin-left: 16px;
+}
+.other_nav_item .picture {
+  width: 48px;
+  height: 48px;
+  background-image: url(../../images/精灵图-侧边功能.png);
+}
+
+.other_nav_item:nth-child(1) li:nth-child(1) .picture {
+  background-position: 0 0;
+}
+.other_nav_item:nth-child(1) li:nth-child(2) .picture {
+  background-position: -48px 0;
+}
+.other_nav_item:nth-child(1) li:nth-child(3) .picture {
+  background-position: -96px 0;
+}
+.other_nav_item:nth-child(1) li:nth-child(4) .picture {
+  background-position: -144px 0;
+}
+.other_nav_item:nth-child(2) li:nth-child(1) .picture {
+  background-position: 0 -48px;
+}
+.other_nav_item:nth-child(2) li:nth-child(2) .picture {
+  background-position: -48px -48px;
+}
+.other_nav_item:nth-child(2) li:nth-child(3) .picture {
+  background-position: -96px -48px;
+}
+.other_nav_item:nth-child(2) li:nth-child(4) .picture {
+  background-position: -144px -48px;
+}
+.other_nav_item:nth-child(3) li:nth-child(1) .picture {
+  background-position: 0 -96px;
+}
+.other_nav_item:nth-child(3) li:nth-child(2) .picture {
+  background-position: -48px -96px;
+}
+.other_nav_item:nth-child(3) li:nth-child(3) .picture {
+  background-position: -96px -96px;
+}
+.other_nav_item:nth-child(3) li:nth-child(4) .picture {
+  background-position: -144px -96px;
+}
+
+.other_nav_item:nth-child(3) picture:nth-child(4) {
+  background-position: -144 -96;
+}
+
+
+/* #endregion 内容区end */

@@ -1,0 +1,102 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background-color: #f3f5f7;
+}
+/* #region header start */
+.header {
+  height: 100px;
+  background-color: #fff;
+}
+.header .container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.logo {
+  width: 195px;
+  height: 41px;
+}
+.logo a {
+  display: block;
+  background: url(../images/logo.png);
+  height: 41px;
+  font-size: 0;
+}
+.nav {
+  margin-left: 100px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  margin-right: 20px;
+  height: 35px;
+}
+.nav a {
+  font-size: 19px;
+  padding: 0 8px;
+  line-height: 27px;
+}
+.nav ul li:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+.search {
+  width: 412px;
+  height: 40px;
+  margin-left: 80px;
+}
+.search input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f3f5f7;
+  border: 0px;
+  padding: 0 19px;
+  outline: 0;
+}
+.user {
+  margin-left: 32px;
+}
+.user img {
+  vertical-align: middle;
+  /* margin-right: 7px; */
+}
+.user span {
+  color: #666;
+  font-size: 16px;
+}
+/* #endregion header end */
+
+/* #region banner start  */
+.banner {
+  height: 420px;
+  background-color: #0092cb;
+}
+
+.banner .container {
+  height: 420px;
+  background: url(../uploads/banner.png);
+}
+.banner .container {
+  display: flex;
+  /* 主轴两侧对齐 */
+  justify-content: space-between;
+  /* 侧轴居中 */
+  align-items: center;
+}
+
+.banner .left {
+  width: 191px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.banner .right {
+  width: 218px;
+  height: 305px;
+  background-color: pink;
+}
+/*  #endregion banner  end  */

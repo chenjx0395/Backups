@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      .mi {
+        width: 1000px;
+        height: 680px;
+        margin: 200px auto;
+      }
+      .mi .left {
+        width: 300px;
+        height: 680px;
+        background-color: green;
+        float: left;
+      }
+      .mi .right {
+        width: 650px;
+        height: 680px;
+        float: right;
+      }
+      .mi .right ul li {
+        width: 155px;
+        height: 330px;
+        background-color: pink;
+        float: left;
+        margin: 0 10px 0 0;
+      }
+      .mi .right ul li:nth-child(4n) {
+        margin-right: 0;
+      }
+      .mi .right ul li:nth-child(-n + 4) {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mi">
+      <div class="left"></div>
+      <div class="right">
+        <ul>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
